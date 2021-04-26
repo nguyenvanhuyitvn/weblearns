@@ -31,18 +31,13 @@
 <div class="wrapper">
 
   @include('admin.master.header')
-
   @include('admin.master.side-bar')
-
   <!-- Content Wrapper. Contains page content -->
-  @include('admin.master.breadcrumb')
     <!-- /.content-header -->
-
-    <!-- Main content -->
-    @yield('content')
-    <!-- /.content -->
-  </div>
-  <!-- /.content-wrapper -->
+        <!-- Main content -->
+        @yield('content')
+        <!-- /.content -->
+    <!-- /.content-wrapper -->
   @include('admin.master.footer')
 </div>
 <!-- ./wrapper -->
