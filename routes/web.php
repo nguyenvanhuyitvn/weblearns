@@ -15,9 +15,9 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-
-Route::group(['prefix' => 'admin','namespace'=>'Admin\Auth'], function() {
-    Route::get('login','AuthController@login')->name('login');
+// Route::get('login','Admin\Auth\AuthController@login')->name('login');
+Route::group(['namespace'=>'Admin\Auth'], function() {
+   Route::get('login','AuthController@login')->name('login');
     Route::post('login','AuthController@submitLogin');
     Route::get('register','AuthController@register')->name('register');
     Route::post('register','AuthController@submitRegister');
